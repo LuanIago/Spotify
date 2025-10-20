@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url(/fonts/Spotify-Font/Gotham-Black.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url(/fonts/Spotify-Font/Gotham-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url(/fonts/Spotify-Font/Gotham-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gotham-Light', Arial, Helvetica, sans-serif;
+    color: #b3b3b3;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+header nav {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 8px;
+}
+
+/* SPOTIFY LOGO AREA */
+header .logo-area,
+.search-area--home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+}
+
+header .logo-area i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* SEARCH AREA */
+header .search-area {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+}
+
+.search-area i {
+    font-size: 1.4rem;
+    color: inherit;
+}
+
+.search-area--home {
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    color: #fff;
+}
+
+.search-area--home:hover {
+    background-color: #2A2A2A;
+    transform: scale(1.03, 1.03);
+}
+
+.search-area--home a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+
+.search-area--home a:hover {
+    color: #fff;
+}
+
+
+.search-area--input {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-right: 5rem;
+    padding-left: 6px;
+}
+
+.search-area--input form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-area--input button {
+    cursor: pointer;
+    margin-right: calc(-1.4rem - 12px);
+    background-color: transparent;
+    border: none;
+    z-index: 5;
+    transition: all 0.2s ease-in;
+}
+
+.search-area--input input {
+    display: inline-block;
+    outline: none;
+    height: 3rem;
+    border-radius: 22px;
+    border: 1px solid transparent;
+    width: inherit;
+    background-color: #1F1F1F;
+    padding: 0px 3rem 0px 3rem;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.search-area--input input::placeholder {
+    color: #B3B3A6;
+}
+
+.search-area--input form:hover input {
+    background-color: #2A2A2A;
+    border: 1px solid #444;
+}
+
+.search-area--input form:hover button {
+    color: #fff;
+}
+
+.search-area--input .browse {
+    margin-left: calc(-1.4rem - 28px);
+    z-index: 5;
+    padding-left: 10px;
+    border-left: 1px solid #b3b3b3;
+}
+
+.search-area--input .browse a {
+    display: inline-block;
+    height: 100%;
+    transition: transform 0.2s ease;
+}
+
+.search-area--input .browse a:hover {
+    color: #fff;
+    transform: scale(1.03, 1.03);
+}
+
+
+/* RIGHT AREA */
+header .right-area {
+    display: flex;
+    flex: 1;
+}
+
+
+.right-area--left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    padding: 7px 0px;
+}
+
+.right-area--left ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid #fff;
+}
+
+.right-area--left li {
+    height: 100%;
+}
+
+.right-area--left a {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    font-family: 'Gotham-Bold';
+    transition: transform 0.2s ease-in;
+}
+
+.right-area--left a:hover {
+    transform: scale(1.03, 1.03);
+    color: #fff;
+}
+
+
+.right-area--middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.right-area--middle ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 7px 0px;
+}
+
+.right-area--middle li {
+    height: 100%;
+}
+
+.right-area--middle li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    font-family: 'Gotham-Bold';
+    transition: transform 0.2s ease-in;
+    font-size: 14px;
+}
+
+.right-area--middle li a:hover {
+    transform: scale(1.03, 1.03);
+    color: #fff;
+}
+
+.right-area--middle li a span {
+    font-family: 'Gotham-Bold';
+}
+
+.right-area--middle li a i {
+    color: inherit;
+}
+
+
+.right-area--right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 230px;
+}
+
+.right-area--right ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.right-area--right li {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 14px);
+    margin: 0px 0px;
+}
+
+.right-area--right li.bt-signUp {
+    height: 100%;
+}
+
+.right-area--right li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Gotham-Bold';
+    transition: transform 0.2s ease-in;
+}
+
+.right-area--right li a:hover {
+    transform: scale(1.03, 1.03);
+    color: #fff;
+}
+
+.right-area--right li.bt-signUp a {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    padding: 0px 27px;
+    border-radius: 20px;
+}
+
+.right-area--right li.bt-signUp a:hover {
+    background-color: #eee
+}
