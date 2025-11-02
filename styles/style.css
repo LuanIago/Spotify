@@ -468,7 +468,7 @@ header .right-area {
     background: linear-gradient(to bottom, #121212, #161616);
     flex: 6;
     border-radius: 8px;
-    padding: 28px 0px;
+    padding: 1.8rem 0rem 0rem 0rem;
 }
 
 
@@ -582,3 +582,81 @@ main .section-area {
 .arrows div:hover i {
     color: #fff;
 }
+
+
+/* FOOTER */
+.content footer {
+    padding: 0rem 2rem;
+}
+
+.content footer .ft-top,
+.content footer .ft-bottom {
+    border-top: 1px solid #292929;
+    padding: 2.5rem 0rem;
+}
+
+
+.content footer .ft-top {
+    display: flex;
+}
+
+.content footer .ft-top--left {
+    display: flex;
+    gap: 2.6rem;
+    flex: 4;
+}
+
+.content footer .ft-top--left ul li {
+    padding-bottom: 0.5rem;
+}
+
+.content footer .ft-top--left ul li span {
+    color: #fff;
+    font-family: 'Gotham-Bold';
+}
+
+.content footer .ft-top--left ul li a {
+    padding-bottom: inherit;
+}
+
+.content footer .ft-top--left ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.content footer .ft-top--right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex: 1.5;
+}
+
+.content footer .ft-top--right .social-media {
+    background-color: #292929;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.content footer .ft-top--right .social-media:hover {
+    background-color: #727272;
+}
+
+.content footer .ft-top--right .social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.content footer .ft-top--right .social-media a i {
+    font-size: 1.2rem;
+}
+
+
+.content footer .ft-bottom p {
+    font-size: 0.8rem;
+} 
