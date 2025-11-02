@@ -318,6 +318,7 @@ header .right-area {
 }
 
 
+/* LIBRARY AREA */
 .library {
     background-color: #121212;
     flex: 2;
@@ -461,8 +462,123 @@ header .right-area {
 }
 
 
+/* CONTENT AREA */
 .content {
-    background: linear-gradient(to bottom, #212121, #121212);
+    overflow-y: scroll;
+    background: linear-gradient(to bottom, #121212, #161616);
     flex: 6;
     border-radius: 8px;
+    padding: 28px 0px;
+}
+
+
+/* TITLES */
+main .title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 54px;
+}
+
+main .title-area h1 a {
+    font-family: 'Gotham-Bold';
+    font-size: 24px;
+    color: #fff;
+}
+
+main .title-area h1 a:hover,
+main .title-area p a:hover {
+    text-decoration: underline;
+}
+
+main .title-area p a {
+    font-family: 'Gotham-Bold';
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* SECTION/SLIDERS AREAS */
+main .section-area {
+    position: relative;
+    margin: 8px 0px 35px 0px;
+    padding: 0px 50px;
+}
+
+.section-area .slide-area {
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+
+.slide-area .sliders {
+    display: flex;
+    width: 600vw;
+}
+
+.sliders .slide-content {
+    display: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 0.7rem;
+    width: 11.15rem;
+}
+
+.sliders .slide-content:hover {
+    background-color: #1F1F1F;
+}
+
+.slide-content img {
+    width: 9.75rem;
+    height: 9.75rem;
+}
+
+.slide-content img.bd-circle {
+    border-radius: 50%;
+}
+
+.slide-content h2 {
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 0px;
+}
+
+.slide-content h2:hover,
+.slide-content p.hv-under:hover {
+    text-decoration: underline;
+}
+
+.slide-content p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+
+.section-area .arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+
+.arrows div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A2A2A;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    cursor: pointer;
+}
+
+.arrows div:hover {
+    background-color: #3E3E3E;
+}
+
+.arrows div:hover i {
+    color: #fff;
 }
