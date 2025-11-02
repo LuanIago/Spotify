@@ -62,6 +62,21 @@ document.querySelectorAll('.arrow-right-bt').forEach(bt => {
 
 
 
+const trendSongsSliders = document.querySelector('.sliders.sect-trendSongs');
+
+for (let i = 0; i < trendSongsData.length; i++) {
+    const slideCard = document.querySelector('.slide-content').cloneNode(true);
+
+    slideCard.querySelector('h2').innerHTML = trendSongsData[i].name;
+    slideCard.querySelector('img').src = trendSongsData[i].image;
+    slideCard.querySelector('p').innerHTML = trendSongsData[i].artists;
+    slideCard.querySelector('p').classList.add('hv-under');
+    slideCard.style.display = 'block';
+
+    trendSongsSliders.appendChild(slideCard);
+};
+
+
 const artistsSliders = document.querySelector('.sliders.sect-artists');
 
 for (let i = 0; i < artistsData.length; i++) {
