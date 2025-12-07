@@ -37,10 +37,45 @@ body {
     background-color: black;
 }
 
+/* PAGE CONTAINER */
+.container {
+    display: flex;
+    gap: 10px;
+    height: calc(100vh - 64px);
+    padding: 0px 8px;
+}
+
+/* BUTTON STYLED */
+.button {
+    background-color: #fff;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 10px 16px;
+    color: #000;
+    font-family: 'Gotham-Black';
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #ddd;
+    transform: scale(1.05, 1.05);
+}
+
+
+header {
+    /* position: fixed; */
+    z-index: 20;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 
 header nav {
     background-color: black;
     display: flex;
+    align-items: center;
     height: 64px;
     width: 100%;
     gap: 10px;
@@ -309,12 +344,8 @@ header .right-area {
 }
 
 
-/* PAGE CONTAINER */
-.container {
-    display: flex;
-    gap: 10px;
-    height: calc(100vh - 64px);
-    padding: 0px 8px 8px 8px;
+#menu_area {
+    display: none;
 }
 
 
@@ -388,24 +419,6 @@ header .right-area {
     margin: 10px 0px 16px 0px;
     font-size: 14px;
 }
-
-.library .aside-overflow--box div {
-    background-color: #fff;
-    border-radius: 12px;
-    width: fit-content;
-    padding: 6px 16px;
-    color: #000;
-    font-family: 'Gotham-Black';
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.library .aside-overflow--box div:hover {
-    background-color: #ddd;
-    transform: scale(1.05, 1.05);
-}
-
 
 .library footer {
     height: 50%;
@@ -507,7 +520,7 @@ main .section-area {
 .section-area .slide-area {
     overflow: hidden;
     position: relative;
-    z-index: 99;
+    z-index: 10;
 }
 
 .slide-area .sliders {
@@ -659,4 +672,4 @@ main .section-area {
 
 .content footer .ft-bottom p {
     font-size: 0.8rem;
-} 
+}
