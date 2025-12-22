@@ -1,226 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3c811459c3.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3c811459c3.js"
+      crossorigin="anonymous"
+    ></script>
     <title>SPOTIFY</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/responsiveness.css">
-</head>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/responsiveness.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="container">
-        <nav>
-            <div class="logo-area">
-                <a href="#" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
+      <nav>
+        <div class="logo-area">
+          <a href="#" title="Spotify"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+        <div class="search-area">
+          <div class="search-area--home">
+            <a href="#" title="Início"><i class="fa-solid fa-house"></i></a>
+          </div>
+          <div class="search-area--input">
+            <form>
+              <button type="submit" title="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input
+                type="search"
+                name="key-word"
+                placeholder="O que você quer ouvir?"
+              />
+            </form>
+            <div class="browse">
+              <a href="#" title="Navegar"
+                ><i class="fa-solid fa-compass"></i
+              ></a>
             </div>
-            <div class="search-area">
-                <div class="search-area--home">
-                    <a href="#" title="Início"><i class="fa-solid fa-house"></i></a>
-                </div>
-                <div class="search-area--input">
-                    <form>
-                        <button type="submit" title="Buscar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                        <input type="search" name="key-word" placeholder="O que você quer ouvir?">
-                    </form>
-                    <div class="browse">
-                        <a href="#" title="Navegar"><i class="fa-solid fa-compass"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="right-area">
-                <div class="right-area--left">
-                    <ul>
-                        <li><a href="">Premium</a></li>
-                        <li><a href="">Suporte</a></li>
-                        <li><a href="">Baixar</a></li>
-                    </ul>
-                </div>
-                <div class="right-area--middle">
-                    <ul>
-                        <li>
-                            <a href=""><i class="fa-solid fa-download"></i> Instalar aplicativo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-area--right">
-                    <ul>
-                        <li><a href="">Inscrever-se</a></li>
-                        <li class="bt-signUp"><a href="">Entrar</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="menu_area">
-                <div class="button">Abrir o app</div>
-                <div id="menu_mobile">
-                    <div id="bar"></div>
-                    <div id="bar"></div>
-                    <div id="bar"></div>
-                </div>
-            </div>
-        </nav>
+          </div>
+        </div>
+        <div class="right-area">
+          <div class="right-area--left">
+            <ul>
+              <li><a href="">Premium</a></li>
+              <li><a href="">Suporte</a></li>
+              <li><a href="">Baixar</a></li>
+            </ul>
+          </div>
+          <div class="right-area--middle">
+            <ul>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-download"></i> Instalar aplicativo</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="right-area--right">
+            <ul>
+              <li><a href="">Inscrever-se</a></li>
+              <li class="bt-signUp"><a href="">Entrar</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="menu_area">
+          <div class="button">Abrir o app</div>
+          <div id="menu_mobile">
+            <i
+              class="fa-solid fa-bars"
+              style="color: #ffffff; font-size: 24px"
+            ></i>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="container">
-        <div class="library">
-            <aside>
-                <div class="aside-title">
-                    <h3>Sua Biblioteca</h3>
-                    <div title="Criar playlist ou pasta">+</div>
+      <div class="library">
+        <aside>
+          <div class="aside-title">
+            <h3>Sua Biblioteca</h3>
+            <div title="Criar playlist ou pasta">+</div>
+          </div>
+          <div class="aside-overflow">
+            <div class="aside-overflow--box">
+              <h4>Crie sua primeira playlist</h4>
+              <p>É fácil, vamos te ajudar.</p>
+              <div class="button">Criar playlist</div>
+            </div>
+            <div class="aside-overflow--box">
+              <h4>Que tal seguir um podcast novo?</h4>
+              <p>Avisaremos você sobre novos episódios.</p>
+              <div class="button">Explore podcasts</div>
+            </div>
+          </div>
+        </aside>
+        <footer>
+          <ul>
+            <li><a href="">Legal</a></li>
+            <li><a href="">Segurança e Centro de privacidade</a></li>
+            <li><a href="">Política de privacidade</a></li>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Sobre anúncios</a></li>
+            <li><a href="">Acessibilidade</a></li>
+          </ul>
+          <span><a href="">Cookies</a></span>
+          <div>
+            <a href=""><i class="fa-solid fa-globe"></i> Português do Brasil</a>
+          </div>
+        </footer>
+      </div>
+      <div class="content">
+        <main>
+          <section>
+            <div class="title-area">
+              <h1><a href="">Músicas em alta</a></h1>
+              <p><a href="">Mostrar tudo</a></p>
+            </div>
+            <div class="section-area">
+              <div class="slide-area">
+                <div
+                  class="sliders sect-trendSongs"
+                  style="transform: translateX(0rem)"
+                >
+                  <div class="slide-content">
+                    <img src="" alt="" />
+                    <h2></h2>
+                    <p>Artista</p>
+                  </div>
                 </div>
-                <div class="aside-overflow">
-                    <div class="aside-overflow--box">
-                        <h4>Crie sua primeira playlist</h4>
-                        <p>É fácil, vamos te ajudar.</p>
-                        <div class="button">Criar playlist</div>
-                    </div>
-                    <div class="aside-overflow--box">
-                        <h4>Que tal seguir um podcast novo?</h4>
-                        <p>Avisaremos você sobre novos episódios.</p>
-                        <div class="button">Explore podcasts</div>
-                    </div>
+              </div>
+              <div class="arrows sect-trendSongs">
+                <div class="arrow-left-bt">
+                  <i class="fa-solid fa-arrow-left"></i>
                 </div>
-            </aside>
-            <footer>
-                <ul>
-                    <li><a href="">Legal</a></li>
-                    <li><a href="">Segurança e Centro de privacidade</a></li>
-                    <li><a href="">Política de privacidade</a></li>
-                    <li><a href="">Cookies</a></li>
-                    <li><a href="">Sobre anúncios</a></li>
-                    <li><a href="">Acessibilidade</a></li>
-                </ul>
-                <span><a href="">Cookies</a></span>
-                <div><a href=""><i class="fa-solid fa-globe"></i> Português do Brasil</a></div>
-            </footer>
-        </div>
-        <div class="content">
-            <main>
-                <section>
-                    <div class="title-area">
-                        <h1><a href="">Músicas em alta</a></h1>
-                        <p><a href="">Mostrar tudo</a></p>
-                    </div>
-                    <div class="section-area">
-                        <div class="slide-area">
-                            <div class="sliders sect-trendSongs" style="transform: translateX(0rem)">
-                                <div class="slide-content">
-                                    <img src="" alt="">
-                                    <h2></h2>
-                                    <p>Artista</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="arrows sect-trendSongs">
-                            <div class="arrow-left-bt"><i class="fa-solid fa-arrow-left"></i></div>
-                            <div class="arrow-right-bt"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </div>
-                </section>
+                <div class="arrow-right-bt">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </section>
 
-                <section>
-                    <div class="title-area">
-                        <h1><a href="">Artistas populares</a></h1>
-                        <p><a href="">Mostrar tudo</a></p>
-                    </div>
-                    <div class="section-area">
-                        <div class="slide-area">
-                            <div class="sliders sect-artists" style="transform: translateX(0rem)">
-                                <div class="slide-content">
-                                    <img src="" alt="">
-                                    <h2></h2>
-                                    <p>Artista</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="arrows sect-artists">
-                            <div class="arrow-left-bt"><i class="fa-solid fa-arrow-left"></i></div>
-                            <div class="arrow-right-bt"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </div>
-                </section>
+          <section>
+            <div class="title-area">
+              <h1><a href="">Artistas populares</a></h1>
+              <p><a href="">Mostrar tudo</a></p>
+            </div>
+            <div class="section-area">
+              <div class="slide-area">
+                <div
+                  class="sliders sect-artists"
+                  style="transform: translateX(0rem)"
+                >
+                  <div class="slide-content">
+                    <img src="" alt="" />
+                    <h2></h2>
+                    <p>Artista</p>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows sect-artists">
+                <div class="arrow-left-bt">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="arrow-right-bt">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </section>
 
-                <section>
-                    <div class="title-area">
-                        <h1><a href="">Singles e álbuns que todo mundo gosta</a></h1>
-                        <p><a href="">Mostrar tudo</a></p>
-                    </div>
-                    <div class="section-area">
-                        <div class="slide-area">
-                            <div class="sliders sect-albums" style="transform: translateX(0rem)">
-                                <div class="slide-content">
-                                    <img src="" alt="">
-                                    <h2></h2>
-                                    <p>Artista</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="arrows sect-albums">
-                            <div class="arrow-left-bt"><i class="fa-solid fa-arrow-left"></i></div>
-                            <div class="arrow-right-bt"><i class="fa-solid fa-arrow-right"></i></div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <div class="ft-top">
-                    <div class="ft-top--left">
-                        <ul>
-                            <li><span>Empresa</span></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="#">Empregos</a></li>
-                            <li><a href="#">For the Record</a></li>
-                        </ul>
-                        <ul>
-                            <li><span>Comunidades</span></li>
-                            <li><a href="#">Para Artistas</a></li>
-                            <li><a href="#">Desenvolvedores</a></li>
-                            <li><a href="#">Publicidade</a></li>
-                            <li><a href="#">Investidores</a></li>
-                            <li><a href="#">Fornecedores</a></li>
-                        </ul>
-                        <ul>
-                            <li><span>Links úteis</span></li>
-                            <li><a href="#">Suporte</a></li>
-                            <li><a href="#">Aplicativo móvel grátis</a></li>
-                            <li><a href="#">Popular por país</a></li>
-                            <li><a href="#">Import your music</a></li>
-                        </ul>
-                        <ul>
-                            <li><span>Planos do Spotify</span></li>
-                            <li><a href="#">Premium Individual</a></li>
-                            <li><a href="#">Premium Duo</a></li>
-                            <li><a href="#">Premium Família</a></li>
-                            <li><a href="#">Premium Universitário</a></li>
-                            <li><a href="#">Spotify Free</a></li>
-                        </ul>
-                    </div>
-                    <div class="ft-top--right">
-                        <div class="social-media"><a href="#">
-                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            </a></div>
-                        <div class="social-media"><a href="#">
-                                <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
-                            </a></div>
-                        <div class="social-media"><a href="#">
-                                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-                            </a></div>
-                    </div>
+          <section>
+            <div class="title-area">
+              <h1><a href="">Singles e álbuns que todo mundo gosta</a></h1>
+              <p><a href="">Mostrar tudo</a></p>
+            </div>
+            <div class="section-area">
+              <div class="slide-area">
+                <div
+                  class="sliders sect-albums"
+                  style="transform: translateX(0rem)"
+                >
+                  <div class="slide-content">
+                    <img src="" alt="" />
+                    <h2></h2>
+                    <p>Artista</p>
+                  </div>
                 </div>
-                <div class="ft-bottom">
-                    <p>&copy; 2025 Spotify AB</p>
+              </div>
+              <div class="arrows sect-albums">
+                <div class="arrow-left-bt">
+                  <i class="fa-solid fa-arrow-left"></i>
                 </div>
-            </footer>
-        </div>
+                <div class="arrow-right-bt">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <div class="ft-top">
+            <div class="ft-top--left">
+              <ul>
+                <li><span>Empresa</span></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Empregos</a></li>
+                <li><a href="#">For the Record</a></li>
+              </ul>
+              <ul>
+                <li><span>Comunidades</span></li>
+                <li><a href="#">Para Artistas</a></li>
+                <li><a href="#">Desenvolvedores</a></li>
+                <li><a href="#">Publicidade</a></li>
+                <li><a href="#">Investidores</a></li>
+                <li><a href="#">Fornecedores</a></li>
+              </ul>
+              <ul>
+                <li><span>Links úteis</span></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Aplicativo móvel grátis</a></li>
+                <li><a href="#">Popular por país</a></li>
+                <li><a href="#">Import your music</a></li>
+              </ul>
+              <ul>
+                <li><span>Planos do Spotify</span></li>
+                <li><a href="#">Premium Individual</a></li>
+                <li><a href="#">Premium Duo</a></li>
+                <li><a href="#">Premium Família</a></li>
+                <li><a href="#">Premium Universitário</a></li>
+                <li><a href="#">Spotify Free</a></li>
+              </ul>
+            </div>
+            <div class="ft-top--right">
+              <div class="social-media">
+                <a href="#">
+                  <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+                </a>
+              </div>
+              <div class="social-media">
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>
+                </a>
+              </div>
+              <div class="social-media">
+                <a href="#">
+                  <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="ft-bottom">
+            <p>&copy; 2025 Spotify AB</p>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <script src="assets/scripts/data.js"></script>
     <script src="assets/scripts/script.js"></script>
-</body>
-
+    <script src="assets/scripts/responsiveness_mobileMenu.js"></script>
+  </body>
 </html>

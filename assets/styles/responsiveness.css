@@ -1,161 +1,166 @@
 @media screen and (max-width: 1400px) {
-    .search-area--input {
-        padding-right: 0rem;
-    }
+  .search-area--input {
+    padding-right: 0rem;
+  }
 
-    .search-area--input form {
-        width: 80%;
-    }
+  .search-area--input form {
+    width: 80%;
+  }
 
-    .search-area--input .browse {
-        margin-left: calc(-5.3rem - 28px);
-    }
+  .search-area--input .browse {
+    margin-left: calc(-5.3rem - 28px);
+  }
 
-    header .right-area {
-        flex: 2;
-    }
+  header .right-area {
+    flex: 2;
+  }
 
-    .right-area--middle {
-        justify-content: flex-start;
-        padding-left: 12px;
-    }
+  .right-area--middle {
+    justify-content: flex-start;
+    padding-left: 12px;
+  }
 
-    .library {
-        flex: 3;
-    }
+  .library {
+    flex: 3;
+  }
 }
-
 
 @media screen and (max-width: 1200px) {
-    .search-area--input form {
-        width: 28%;
-    }
+  .search-area--input form {
+    width: 28%;
+  }
 
-    .search-area--input .browse {
-        margin-left: calc(-0.7rem - 28px);
-    }
+  .search-area--input .browse {
+    margin-left: calc(-0.7rem - 28px);
+  }
 }
+@media screen and (max-width: 1200px) {
+  .search-area--input form {
+    width: 28%;
+  }
 
+  .search-area--input .browse {
+    margin-left: calc(-0.7rem - 28px);
+  }
+}
 @media screen and (max-width: 1100px) {
-    header .search-area {
-        flex: 0.5;
-    }
+  header .search-area {
+    flex: 0.5;
+  }
 
-    .search-area--input {
-        flex: 0.4;
-    }
+  .search-area--input {
+    flex: 0.4;
+  }
 
-    .search-area--input form {
-        width: 90%;
-    }
+  .search-area--input form {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 870px) {
-    .container {
-        padding: 0px 0px 0px 14px;
-    }
+  .container {
+    padding: 0px 0px 0px 14px;
+  }
 
-    header.container {
-        padding-right: 14px;
-    }
+  header.container {
+    padding-right: 14px;
+  }
 
-    header nav {
-        justify-content: space-between;
-    }
+  header nav {
+    justify-content: space-between;
+  }
 
-    header .logo-area i {
-        position: relative;
-    }
+  header .logo-area i {
+    position: relative;
+  }
 
-    header .logo-area i::after {
-        content: 'Spotify';
-        font-family: 'Gotham-Bold';
-        position: absolute;
-        padding-left: 4px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 21px;
-    }
+  header .logo-area i::after {
+    content: "Spotify";
+    font-family: "Gotham-Bold";
+    position: absolute;
+    padding-left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 21px;
+  }
 
-    header .search-area,
-    header .right-area {
-        display: none;
-    }
+  header .search-area,
+  header .right-area {
+    display: none;
+  }
 
-    header .right-area {
-        display: flex;
-        flex-direction: column;
-        gap: 2.9rem;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 20;
-        background-color: #000;
-        padding: 5rem 0rem 0rem 2rem;
-    }
+  header .menu-mobile-area {
+    flex-direction: column;
+    gap: 2.9rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    background-color: #000;
+    padding: 5rem 0rem 0rem 2rem;
+  }
 
-    header .right-area ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2.4rem;
-    }
+  header .menu-mobile-area ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+  }
 
-    header .right-area ul a {
-        color: #fff;
-    }
+  header .menu-mobile-area ul a {
+    color: #fff;
+  }
 
-    header .right-area--left {
-        background-color: blue;
-        order: 1;
-    }
+  header .menu-mobile-area .right-area--left {
+    order: 1;
+  }
 
-    header .right-area--left ul {
-        gap: 1.4rem;
-    }
+  header .menu-mobile-area .right-area--left ul {
+    gap: 1.4rem;
+    border: none;
+  }
 
-    header .right-area--middle {
-        flex: 0;
-        width: 1.3rem;
-        height: 0px;
-        border-bottom: 2px solid #fff;
-    }
+  header .menu-mobile-area .right-area--middle {
+    flex: 0;
+    width: 1.3rem;
+    height: 0px;
+    border-bottom: 2px solid #fff;
+  }
 
-    header .right-area--right {
-        background-color: red;
-        order: -1;
-        justify-content: flex-start;
-    }
+  header .menu-mobile-area .right-area--right {
+    order: -1;
+    justify-content: flex-start;
+  }
 
-    header .right-area--right ul a,
-    .right-area--right li.bt-signUp a {
-        font-size: 1.25rem;
-    }
+  .menu-mobile-area .right-area--right li.bt-signUp a {
+    background-color: transparent;
+    color: #fff;
+    padding: 0px;
+  }
 
+  header .menu-mobile-area .right-area--right ul a,
+  .menu-mobile-area .right-area--right li.bt-signUp a {
+    font-size: 1.25rem;
+  }
 
-    #menu_area {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
+  #menu_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    #menu_mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        z-index: 20;
-        height: 19px;
-        width: 20px;
-        cursor: pointer;
-    }
-
-    #menu_mobile #bar {
-        height: 5px;
-        width: 100%;
-        background-color: #FFFFFF;
-    }
+  #menu_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 30;
+    height: 19px;
+    width: 20px;
+    cursor: pointer;
+    transition: all 2s ease;
+  }
 }
