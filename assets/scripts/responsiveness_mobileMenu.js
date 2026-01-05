@@ -12,6 +12,7 @@ const itemsMenuMobileDown = [
   "Privacidade",
   "Condições",
 ];
+const mobileMenuBottom = document.querySelector("#mobile_menu_bottom");
 
 function addItemsMenuMobileArea(menu, ArrayItems) {
   ArrayItems.forEach((item) => {
@@ -23,6 +24,15 @@ function addItemsMenuMobileArea(menu, ArrayItems) {
     a.innerHTML = item;
     menu.appendChild(li);
   });
+}
+
+function CheckActiveClass(parentElement, element) {
+  if (element.classList.contains("active")) {
+    return;
+  } else {
+    parentElement.querySelector(".active").classList.remove("active");
+    element.classList.add("active");
+  }
 }
 
 menuMobile.addEventListener("click", () => {
@@ -55,4 +65,11 @@ window.addEventListener("resize", () => {
     icon.classList.add("fa-bars");
     icon.classList.remove("fa-xmark");
   }
+});
+
+mobileMenuBottom.querySelectorAll("a").forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
+    CheckActiveClass(mobileMenuBottom, item);
+  });
 });

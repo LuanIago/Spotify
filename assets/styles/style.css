@@ -415,13 +415,13 @@ header .right-area {
   padding: 32px 24px;
 }
 
-.library footer ul {
+ul.ft-policy {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
 }
 
-.library footer ul li a {
+ul.ft-policy li a {
   font-size: 11px;
   color: #b3b3b3;
 }
@@ -440,7 +440,7 @@ header .right-area {
   text-decoration: underline;
 }
 
-.library footer div {
+div.ft-language {
   background-color: transparent;
   border: 1px solid #888;
   width: fit-content;
@@ -449,23 +449,24 @@ header .right-area {
   transition: all 0.2s ease;
 }
 
-.library footer div:hover {
+div.ft-language:hover {
   border-color: #fff;
   transform: scale(1.05, 1.05);
 }
 
-.library footer div a {
+div.ft-language a {
   font-family: "Gotham-Bold";
   font-size: 14px;
   color: #fff;
 }
 
-.library footer div i {
+div.ft-language i {
   color: inherit;
 }
 
 /* CONTENT AREA */
 .content {
+  overflow-x: hidden;
   overflow-y: scroll;
   background: linear-gradient(to bottom, #121212, #161616);
   flex: 6;
@@ -562,6 +563,7 @@ main .section-area {
   top: 50%;
   transform: translateY(-50%);
   left: 0px;
+  z-index: 15;
 }
 
 .arrows div {
@@ -653,6 +655,67 @@ main .section-area {
   font-size: 1.2rem;
 }
 
-.content footer .ft-bottom p {
+.content footer .ft-bottom .ft-mobile {
+  display: none;
+}
+
+p.copyright {
   font-size: 0.8rem;
+  margin: 0.8rem 0px 1rem 0px;
+}
+
+/* MOBILE MENU DOWN AREA */
+#mobile_menu_bottom {
+  display: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 19;
+  height: 4.37rem;
+}
+
+#mobile_menu_bottom ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+#mobile_menu_bottom ul li {
+  height: 100%;
+  width: 100%;
+}
+
+#mobile_menu_bottom ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#mobile_menu_bottom ul a .icon_content i {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+#mobile_menu_bottom ul a .icon_content p {
+  font-size: 0.7rem;
+}
+
+#mobile_menu_bottom ul a:active .icon_content i,
+#mobile_menu_bottom ul a:active .icon_content p {
+  color: #333;
+}
+
+#mobile_menu_bottom ul a.active .icon_content i,
+#mobile_menu_bottom ul a.active .icon_content p {
+  color: #fff;
 }
